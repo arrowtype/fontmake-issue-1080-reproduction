@@ -1,4 +1,4 @@
-# fontmake-issue-1080-reproduction
+# FontMake Issue #1080 Reproduction
 
 Repo made for https://github.com/googlefonts/fontmake/issues/1080.
 
