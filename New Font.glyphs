@@ -710,6 +710,14 @@ width = 600;
 unicode = 45;
 }
 );
+instances = (
+{
+instanceInterpolations = {
+m01 = 1;
+};
+name = Regular;
+}
+);
 metrics = (
 {
 type = ascender;

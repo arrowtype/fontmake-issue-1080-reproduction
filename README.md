@@ -1,5 +1,7 @@
 # FontMake Issue #1080 Reproduction
 
+*This issue has been resolved. See the Update below for details.*
+
 Repo made for https://github.com/googlefonts/fontmake/issues/1080.
 
 Running the following seems to do nothing, which is unexpected and seems to cause downstream problems:
@@ -25,6 +27,14 @@ This also seems to be the case for other output types, such as TTF:
 ```sh
 fontmake -i -o ttf -g "New Font.glyphs"
 ```
+
+## UPDATE: the answer (for the simplified case, at least)
+
+The Glyphs file in this repo didn’t yet include anything in the *Font Info > Exports*. Once an instance/export was added, the fontmake `-i` flag started working as expected.
+
+So, this probably isn’t a FontMake issue, after all. 
+
+(I am still experiencing this issue in a more complex font, but perhaps the real issue is again in the font, and I just need to find it. It isn’t as simple as the lack of a defined Instance, however.)
 
 ## Setup for reproduction
 
